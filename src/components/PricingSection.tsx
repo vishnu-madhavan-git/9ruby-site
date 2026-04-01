@@ -63,7 +63,20 @@ export function PricingSection() {
       className="relative py-24 lg:py-32 overflow-hidden"
       style={{ background: "oklch(0.09 0.01 260)" }}
     >
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      {/* Organic background element */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] pointer-events-none opacity-15">
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/connection-KeJwWPQvn6l0a7C48tCARYtNEdC92H.png"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-contain"
+          style={{ transform: "scaleX(-1) rotate(15deg)" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[oklch(0.09_0.01_260)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[oklch(0.09_0.01_260)]" />
+      </div>
+
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <ScrollReveal>
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/40 mb-8">

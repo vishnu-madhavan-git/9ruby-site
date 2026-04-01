@@ -12,6 +12,7 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PricingSection } from "@/components/PricingSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
+import { OrganicDivider } from "@/components/OrganicDivider";
 
 export default function Home() {
   return (
@@ -20,11 +21,14 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <ProcessSection />
+      <OrganicDivider variant="connection" />
       <InfraSection />
       <IntegrationsSection />
       <SecuritySection />
+      <OrganicDivider variant="bioluminescent" flip />
       <SDKSection />
       <TestimonialsSection />
+      <OrganicDivider variant="landscape" />
       <PricingSection />
       <CTASection />
       <Footer />

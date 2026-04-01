@@ -5,7 +5,19 @@ import { ScrollReveal } from "./ScrollReveal";
 export function CTASection() {
   return (
     <section className="relative py-32 lg:py-40 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+      {/* Bioluminescent landscape background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2810%29-UnDKstODkIENp5xqTYUEpt0Sm8tNOw.png"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/60 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50" />
+      </div>
+
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 text-center relative z-10">
         <ScrollReveal>
           <h2 className="text-5xl md:text-6xl lg:text-[96px] font-[family-name:var(--font-instrument-serif)] tracking-tight leading-[0.9] mb-8">
             Ready to delegate

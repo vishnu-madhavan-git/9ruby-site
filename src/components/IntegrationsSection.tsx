@@ -20,7 +20,19 @@ const INTEGRATIONS = [
 export function IntegrationsSection() {
   return (
     <section id="integrations" className="relative py-24 lg:py-32 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      {/* Bioluminescent connection image */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none opacity-30">
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/connection-KeJwWPQvn6l0a7C48tCARYtNEdC92H.png"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-contain object-right-top"
+        />
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-black" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+      </div>
+
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div>
             <ScrollReveal>

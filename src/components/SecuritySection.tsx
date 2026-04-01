@@ -35,7 +35,18 @@ export function SecuritySection() {
       className="relative py-24 lg:py-32 overflow-hidden"
       style={{ background: "oklch(0.09 0.01 260)" }}
     >
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      {/* Bioluminescent landscape background */}
+      <div className="absolute bottom-0 left-0 w-full h-[500px] pointer-events-none opacity-20">
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2813%29-OQ2DiR3ElVsUg8kTvTL1kC5A3Q6maM.png"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover object-bottom"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.09_0.01_260)] via-transparent to-[oklch(0.09_0.01_260)]" />
+      </div>
+
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-16">
           <div>
             <ScrollReveal>
@@ -97,6 +108,21 @@ export function SecuritySection() {
               <span className="text-sm text-white/40">
                 0 Security incidents this year
               </span>
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* Real-time metrics graph */}
+        <ScrollReveal delay={300}>
+          <div className="mt-12 relative border border-white/10 bg-black overflow-hidden">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/real-time-graph-INFmn3u0MlUwvNPynoIhwxtPaPjxM5.png"
+              alt="Real-time agent metrics"
+              className="w-full h-auto opacity-80"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-8">
+              <span className="font-[family-name:var(--font-jetbrains-mono)] text-xs text-white/40">Real-time agent security monitoring</span>
             </div>
           </div>
         </ScrollReveal>
