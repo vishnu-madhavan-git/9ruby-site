@@ -9,6 +9,8 @@ const IMAGES = {
     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2813%29-OQ2DiR3ElVsUg8kTvTL1kC5A3Q6maM.png",
   "ocean-hero": "/images/ocean/ocean-hero.jpg",
   "ocean-garden": "/images/ocean/ocean-garden.jpg",
+  "ocean-tree": "/images/ocean/ocean-tree.jpg",
+  "ocean-network": "/images/ocean/ocean-network.jpg",
 };
 
 export function OrganicDivider({

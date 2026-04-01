@@ -24,11 +24,12 @@ export default function Home() {
       <OrganicDivider variant="ocean-hero" />
       <InfraSection />
       <IntegrationsSection />
+      <OrganicDivider variant="ocean-network" flip />
       <SecuritySection />
-      <OrganicDivider variant="ocean-garden" flip />
+      <OrganicDivider variant="ocean-garden" />
       <SDKSection />
       <TestimonialsSection />
-      <OrganicDivider variant="ocean-hero" flip />
+      <OrganicDivider variant="ocean-tree" flip />
       <PricingSection />
       <CTASection />
       <Footer />

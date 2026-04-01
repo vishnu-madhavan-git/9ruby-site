@@ -23,7 +23,7 @@ export function IntegrationsSection() {
       {/* Bioluminescent connection image */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none opacity-30">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/connection-KeJwWPQvn6l0a7C48tCARYtNEdC92H.png"
+          src="/images/ocean/ocean-network.jpg"
           alt=""
           aria-hidden="true"
           className="w-full h-full object-contain object-right-top"
