@@ -37,11 +37,11 @@ export function Footer() {
               <span className="font-[family-name:var(--font-instrument-serif)] text-2xl">
                 9RUBY
               </span>
-              <span className="font-[family-name:var(--font-jetbrains-mono)] text-xs mt-1 text-white/60">
+              <span className="font-[family-name:var(--font-jetbrains-mono)] text-xs mt-1 text-white/25">
                 IX
               </span>
             </div>
-            <p className="text-sm text-white/40 leading-relaxed max-w-xs">
+            <p className="text-sm text-white/25 leading-relaxed max-w-xs">
               AI-powered marketing agency. Autonomous agents that plan, create,
               and scale your brand — 24/7. Nine is final.
             </p>
@@ -51,7 +51,7 @@ export function Footer() {
                 <a
                   key={social}
                   href="#"
-                  className="text-xs text-white/30 hover:text-white/60 transition-colors font-[family-name:var(--font-jetbrains-mono)]"
+                  className="text-xs text-white/25 hover:text-white/50 transition-colors font-[family-name:var(--font-jetbrains-mono)]"
                 >
                   {social}
                 </a>
@@ -62,7 +62,7 @@ export function Footer() {
           {/* Link columns */}
           {Object.entries(FOOTER_LINKS).map(([category, links]) => (
             <div key={category}>
-              <h4 className="text-sm font-medium mb-4 text-white/60">
+              <h4 className="text-sm font-medium mb-4 text-white/25">
                 {category}
               </h4>
               <ul className="space-y-3">
@@ -70,7 +70,7 @@ export function Footer() {
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-sm text-white/30 hover:text-white/60 transition-colors"
+                      className="text-sm text-white/25 hover:text-white/50 transition-colors"
                     >
                       {link}
                       {link === "Careers" && (
@@ -88,12 +88,12 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-white/10 gap-4">
-          <span className="text-xs text-white/30">
+          <span className="text-xs text-white/25">
             &copy; 2026 9Ruby. All rights reserved.
           </span>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-xs text-white/40">
+            <span className="text-xs text-white/25">
               All agents operational
             </span>
           </div>

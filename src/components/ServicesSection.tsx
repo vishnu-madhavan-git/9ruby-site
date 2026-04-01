@@ -10,7 +10,7 @@ export function ServicesSection() {
         <div className="relative mb-24 lg:mb-32">
           <div className="grid lg:grid-cols-12 gap-8 items-end">
             <div className="lg:col-span-7">
-              <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/40 mb-6">
+              <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/25 mb-6">
                 <span className="w-12 h-px bg-white/30" />
                 Services
               </span>
@@ -24,7 +24,7 @@ export function ServicesSection() {
             </div>
             <div className="lg:col-span-5 lg:pb-4">
               <ScrollReveal delay={200}>
-                <p className="text-xl text-white/60 leading-relaxed">
+                <p className="text-xl text-white/50 leading-relaxed">
                   Deploy autonomous AI agents that plan, create, and scale your
                   marketing across every channel. No supervision required.
                 </p>
@@ -39,13 +39,13 @@ export function ServicesSection() {
             <div className="lg:col-span-12 relative bg-black border border-white/10 min-h-[500px] overflow-hidden group flex">
               <div className="relative flex-1 p-8 lg:p-12 bg-black">
                 <div className="relative z-10">
-                  <span className="font-[family-name:var(--font-jetbrains-mono)] text-sm text-white/40">
+                  <span className="font-[family-name:var(--font-jetbrains-mono)] text-sm text-white/25">
                     01
                   </span>
                   <h3 className="text-3xl lg:text-4xl font-[family-name:var(--font-instrument-serif)] mt-4 mb-6 group-hover:translate-x-2 transition-transform duration-500">
                     Autonomous Execution
                   </h3>
-                  <p className="text-lg text-white/60 leading-relaxed max-w-md mb-8">
+                  <p className="text-lg text-white/50 leading-relaxed max-w-md mb-8">
                     Deploy AI agents that work independently. They analyze your
                     brand, decide strategy, and execute complex multi-channel
                     campaigns without human intervention.
@@ -54,7 +54,7 @@ export function ServicesSection() {
                     <span className="text-5xl lg:text-6xl font-[family-name:var(--font-instrument-serif)]">
                       99.7%
                     </span>
-                    <span className="block text-sm text-white/40 font-[family-name:var(--font-jetbrains-mono)] mt-2">
+                    <span className="block text-sm text-white/25 font-[family-name:var(--font-jetbrains-mono)] mt-2">
                       task completion
                     </span>
                   </div>
@@ -101,7 +101,7 @@ export function ServicesSection() {
           ].map((service, i) => (
             <ScrollReveal key={service.num} delay={i * 100}>
               <div className="relative p-8 lg:p-10 border border-white/10 bg-black hover:border-white/25 transition-all duration-500 group h-full">
-                <span className="font-[family-name:var(--font-jetbrains-mono)] text-sm text-white/20 group-hover:text-[#C41A3B]/60 transition-colors">
+                <span className="font-[family-name:var(--font-jetbrains-mono)] text-sm text-white/25 group-hover:text-[#C41A3B]/60 transition-colors">
                   {service.num}
                 </span>
                 <h3 className="text-2xl font-[family-name:var(--font-instrument-serif)] mt-4 mb-4 group-hover:translate-x-1 transition-transform duration-500">
@@ -114,7 +114,7 @@ export function ServicesSection() {
                   <span className="text-3xl font-[family-name:var(--font-instrument-serif)]">
                     {service.metric}
                   </span>
-                  <span className="block text-xs text-white/30 font-[family-name:var(--font-jetbrains-mono)] mt-1">
+                  <span className="block text-xs text-white/25 font-[family-name:var(--font-jetbrains-mono)] mt-1">
                     {service.metricLabel}
                   </span>
                 </div>

@@ -35,22 +35,22 @@ export function SecuritySection() {
       className="relative py-24 lg:py-32 overflow-hidden"
       style={{ background: "oklch(0.09 0.01 260)" }}
     >
-      {/* Bioluminescent landscape background */}
-      <div className="absolute bottom-0 left-0 w-full h-[500px] pointer-events-none opacity-20">
+      {/* Deep ocean garden background */}
+      <div className="absolute bottom-0 left-0 w-full h-[600px] pointer-events-none opacity-40">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2813%29-OQ2DiR3ElVsUg8kTvTL1kC5A3Q6maM.png"
+          src="/images/ocean/ocean-garden.jpg"
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover object-bottom"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.09_0.01_260)] via-transparent to-[oklch(0.09_0.01_260)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.09_0.01_260)] via-transparent to-[oklch(0.09_0.01_260)]/80" />
       </div>
 
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-16">
           <div>
             <ScrollReveal>
-              <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/40 mb-8">
+              <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/25 mb-8">
                 <span className="w-12 h-px bg-white/20" />
                 Security
               </span>
@@ -63,7 +63,7 @@ export function SecuritySection() {
           </div>
           <div className="flex flex-col justify-end">
             <ScrollReveal delay={100}>
-              <p className="text-xl text-white/60 leading-relaxed">
+              <p className="text-xl text-white/50 leading-relaxed">
                 Ruby agents are powerful but constrained. Enterprise-grade
                 security ensures every agent operates within strict permission
                 boundaries.
@@ -92,20 +92,20 @@ export function SecuritySection() {
         {/* Compliance badges */}
         <ScrollReveal delay={200}>
           <div className="mt-12 flex flex-wrap items-center gap-4">
-            <span className="text-sm text-white/40 font-[family-name:var(--font-jetbrains-mono)]">
+            <span className="text-sm text-white/25 font-[family-name:var(--font-jetbrains-mono)]">
               Compliance:
             </span>
             {COMPLIANCE.map((badge) => (
               <span
                 key={badge}
-                className="px-4 py-2 text-xs font-[family-name:var(--font-jetbrains-mono)] border border-white/10 text-white/60"
+                className="px-4 py-2 text-xs font-[family-name:var(--font-jetbrains-mono)] border border-white/10 text-white/50"
               >
                 {badge}
               </span>
             ))}
             <div className="ml-auto flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-sm text-white/40">
+              <span className="text-sm text-white/25">
                 0 Security incidents this year
               </span>
             </div>
@@ -122,7 +122,7 @@ export function SecuritySection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-8">
-              <span className="font-[family-name:var(--font-jetbrains-mono)] text-xs text-white/40">Real-time agent security monitoring</span>
+              <span className="font-[family-name:var(--font-jetbrains-mono)] text-xs text-white/25">Real-time agent security monitoring</span>
             </div>
           </div>
         </ScrollReveal>

@@ -64,7 +64,7 @@ export function HeroSection() {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/60">
+            <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/25">
               <span className="w-8 h-px bg-white/30" />
               AI-powered marketing agency that never sleeps
             </span>
@@ -114,7 +114,7 @@ export function HeroSection() {
             <span className="text-3xl lg:text-4xl font-[family-name:var(--font-instrument-serif)] text-white">
               352+
             </span>
-            <span className="text-xs text-white/50 leading-tight">
+            <span className="text-xs text-white/25 leading-tight">
               AI models deployed
             </span>
           </div>
@@ -122,7 +122,7 @@ export function HeroSection() {
             <span className="text-3xl lg:text-4xl font-[family-name:var(--font-instrument-serif)] text-white">
               99.9%
             </span>
-            <span className="text-xs text-white/50 leading-tight">
+            <span className="text-xs text-white/25 leading-tight">
               campaign uptime
             </span>
           </div>
@@ -130,7 +130,7 @@ export function HeroSection() {
             <span className="text-3xl lg:text-4xl font-[family-name:var(--font-instrument-serif)] text-white">
               &lt;2min
             </span>
-            <span className="text-xs text-white/50 leading-tight">
+            <span className="text-xs text-white/25 leading-tight">
               agent deployment
             </span>
           </div>

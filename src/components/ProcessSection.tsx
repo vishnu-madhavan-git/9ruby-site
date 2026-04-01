@@ -39,7 +39,7 @@ export function ProcessSection() {
         <div className="relative mb-0 lg:mb-0 grid lg:grid-cols-2 gap-4 lg:gap-12 items-end">
           <div className="overflow-hidden pb-0 lg:pb-32">
             <ScrollReveal>
-              <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/40 mb-8">
+              <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/25 mb-8">
                 <span className="w-12 h-px bg-white/20" />
                 Process
               </span>
@@ -81,13 +81,13 @@ export function ProcessSection() {
               className={`relative text-left p-8 lg:p-12 border transition-all duration-500 bg-black ${
                 activeStep === i
                   ? "border-white/60"
-                  : "border-white/25 hover:border-white/50"
+                  : "border-white/20 hover:border-white/50"
               }`}
             >
               <div className="flex items-center gap-4 mb-8">
                 <span
                   className={`text-4xl font-[family-name:var(--font-instrument-serif)] transition-colors duration-300 ${
-                    activeStep === i ? "text-[#C41A3B]" : "text-white/20"
+                    activeStep === i ? "text-[#C41A3B]" : "text-white/25"
                   }`}
                 >
                   {step.num}
@@ -101,11 +101,11 @@ export function ProcessSection() {
               <h3 className="text-3xl lg:text-4xl font-[family-name:var(--font-instrument-serif)] mb-2">
                 {step.title}
               </h3>
-              <span className="text-xl text-white/40 font-[family-name:var(--font-instrument-serif)] block mb-6">
+              <span className="text-xl text-white/25 font-[family-name:var(--font-instrument-serif)] block mb-6">
                 {step.subtitle}
               </span>
               <p
-                className={`text-white/60 leading-relaxed transition-opacity duration-300 ${
+                className={`text-white/50 leading-relaxed transition-opacity duration-300 ${
                   activeStep === i ? "opacity-100" : "opacity-60"
                 }`}
               >

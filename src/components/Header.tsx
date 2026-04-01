@@ -33,7 +33,7 @@ export function Header() {
             <span className="font-[family-name:var(--font-instrument-serif)] tracking-tight text-2xl text-white transition-all duration-500">
               9RUBY
             </span>
-            <span className="font-[family-name:var(--font-jetbrains-mono)] text-xs mt-1 text-white/60">
+            <span className="font-[family-name:var(--font-jetbrains-mono)] text-xs mt-1 text-white/25">
               IX
             </span>
           </a>
@@ -89,7 +89,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-5xl font-[family-name:var(--font-instrument-serif)] text-white hover:text-white/60 transition-all duration-500"
+                className="text-5xl font-[family-name:var(--font-instrument-serif)] text-white hover:text-white/50 transition-all duration-500"
                 style={{ transitionDelay: `${i * 50}ms` }}
               >
                 {link.label}

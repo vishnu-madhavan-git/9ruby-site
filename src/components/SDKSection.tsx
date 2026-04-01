@@ -26,7 +26,7 @@ export function SDKSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
             <ScrollReveal>
-              <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/40 mb-8">
+              <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/25 mb-8">
                 <span className="w-12 h-px bg-white/20" />
                 Developer SDK
               </span>
@@ -46,7 +46,7 @@ export function SDKSection() {
                 ].map((feature) => (
                   <div key={feature} className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-[#C41A3B] mt-2 shrink-0" />
-                    <span className="text-white/60">{feature}</span>
+                    <span className="text-white/50">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -60,7 +60,7 @@ export function SDKSection() {
                 <div className="w-3 h-3 rounded-full bg-white/10" />
                 <div className="w-3 h-3 rounded-full bg-white/10" />
                 <div className="w-3 h-3 rounded-full bg-white/10" />
-                <span className="ml-3 text-xs text-white/30 font-[family-name:var(--font-jetbrains-mono)]">
+                <span className="ml-3 text-xs text-white/25 font-[family-name:var(--font-jetbrains-mono)]">
                   campaign.ts
                 </span>
               </div>

@@ -63,23 +63,23 @@ export function PricingSection() {
       className="relative py-24 lg:py-32 overflow-hidden"
       style={{ background: "oklch(0.09 0.01 260)" }}
     >
-      {/* Organic background element */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] pointer-events-none opacity-15">
+      {/* Ocean hero background element */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none opacity-35">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/connection-KeJwWPQvn6l0a7C48tCARYtNEdC92H.png"
+          src="/images/ocean/ocean-hero.jpg"
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-contain"
-          style={{ transform: "scaleX(-1) rotate(15deg)" }}
+          className="w-full h-full object-cover"
+          style={{ transform: "scaleX(-1)" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[oklch(0.09_0.01_260)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[oklch(0.09_0.01_260)]" />
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[oklch(0.09_0.01_260)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[oklch(0.09_0.01_260)]/80" />
       </div>
 
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/40 mb-8">
+            <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/25 mb-8">
               <span className="w-12 h-px bg-white/20" />
               Pricing
               <span className="w-12 h-px bg-white/20" />
@@ -114,17 +114,17 @@ export function PricingSection() {
                       {tier.price}
                     </span>
                     {tier.period && (
-                      <span className="text-white/40 text-sm">{tier.period}</span>
+                      <span className="text-white/25 text-sm">{tier.period}</span>
                     )}
                   </div>
-                  <p className="text-sm text-white/40">{tier.desc}</p>
+                  <p className="text-sm text-white/25">{tier.desc}</p>
                 </div>
 
                 <div className="flex-1 space-y-3 mb-8">
                   {tier.features.map((feature) => (
                     <div key={feature} className="flex items-center gap-3">
                       <Check className="w-4 h-4 text-white/30 shrink-0" />
-                      <span className="text-sm text-white/60">{feature}</span>
+                      <span className="text-sm text-white/50">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -150,7 +150,7 @@ export function PricingSection() {
               (tag) => (
                 <span
                   key={tag}
-                  className="px-4 py-2 text-xs font-[family-name:var(--font-jetbrains-mono)] border border-white/10 text-white/40"
+                  className="px-4 py-2 text-xs font-[family-name:var(--font-jetbrains-mono)] border border-white/10 text-white/25"
                 >
                   {tag}
                 </span>

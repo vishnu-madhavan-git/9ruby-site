@@ -36,7 +36,7 @@ export function TestimonialsSection() {
     <section className="relative py-24 lg:py-32 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <ScrollReveal>
-          <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/40 mb-8">
+          <span className="inline-flex items-center gap-3 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/25 mb-8">
             <span className="w-12 h-px bg-white/20" />
             Trusted by teams worldwide
           </span>
@@ -52,13 +52,13 @@ export function TestimonialsSection() {
                 <div className="flex items-center justify-between pt-6 border-t border-white/10">
                   <div>
                     <span className="text-sm font-medium block">{t.name}</span>
-                    <span className="text-xs text-white/40">{t.role}</span>
+                    <span className="text-xs text-white/25">{t.role}</span>
                   </div>
                   <div className="text-right">
                     <span className="text-2xl font-[family-name:var(--font-instrument-serif)] text-[#C41A3B]">
                       {t.metric}
                     </span>
-                    <span className="block text-xs text-white/30 font-[family-name:var(--font-jetbrains-mono)]">
+                    <span className="block text-xs text-white/25 font-[family-name:var(--font-jetbrains-mono)]">
                       {t.metricLabel}
                     </span>
                   </div>
@@ -74,7 +74,7 @@ export function TestimonialsSection() {
             {COMPANIES.map((company) => (
               <span
                 key={company}
-                className="text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/20 hover:text-white/40 transition-colors"
+                className="text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/25 hover:text-white/50 transition-colors"
               >
                 {company}
               </span>

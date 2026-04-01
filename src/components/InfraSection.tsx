@@ -15,7 +15,7 @@ export function InfraSection() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="mb-20">
           <ScrollReveal>
-            <span className="inline-flex items-center gap-4 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/40 mb-8">
+            <span className="inline-flex items-center gap-4 text-sm font-[family-name:var(--font-jetbrains-mono)] text-white/25 mb-8">
               <span className="w-12 h-px bg-white/20" />
               Global infrastructure
             </span>
@@ -39,7 +39,7 @@ export function InfraSection() {
                 </h2>
               </ScrollReveal>
               <ScrollReveal delay={100}>
-                <p className="mt-8 text-xl text-white/60 leading-relaxed max-w-lg">
+                <p className="mt-8 text-xl text-white/50 leading-relaxed max-w-lg">
                   Your campaigns run on distributed infrastructure across 29
                   regions. Sub-50ms ad delivery to 99% of the world.
                 </p>
@@ -83,10 +83,10 @@ export function InfraSection() {
                     <div key={region.name} className="flex items-center gap-4">
                       <div className="w-2 h-2 rounded-full bg-[#C41A3B] animate-pulse-glow" />
                       <div>
-                        <span className="text-sm text-white/80">
+                        <span className="text-sm text-white/70">
                           {region.name}
                         </span>
-                        <span className="block text-xs text-white/30 font-[family-name:var(--font-jetbrains-mono)]">
+                        <span className="block text-xs text-white/25 font-[family-name:var(--font-jetbrains-mono)]">
                           {region.nodes} nodes
                         </span>
                       </div>
@@ -109,7 +109,7 @@ export function InfraSection() {
                   <span className="text-4xl font-[family-name:var(--font-instrument-serif)]">
                     {metric.value}
                   </span>
-                  <span className="block text-sm text-white/40 font-[family-name:var(--font-jetbrains-mono)] mt-2">
+                  <span className="block text-sm text-white/25 font-[family-name:var(--font-jetbrains-mono)] mt-2">
                     {metric.label}
                   </span>
                 </div>
