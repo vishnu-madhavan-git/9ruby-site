@@ -1,0 +1,104 @@
+"use client";
+
+const FOOTER_LINKS = {
+  Product: [
+    "Agent Services",
+    "How it Works",
+    "Pricing",
+    "Integrations",
+  ],
+  Developers: [
+    "Documentation",
+    "Agent SDK",
+    "API Reference",
+    "Status",
+  ],
+  Company: [
+    "About",
+    "Blog",
+    "Careers",
+    "Contact",
+  ],
+  Legal: [
+    "Privacy",
+    "Terms",
+    "Security",
+  ],
+};
+
+export function Footer() {
+  return (
+    <footer className="border-t border-white/10 py-16 lg:py-20">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div className="grid lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-12 mb-16">
+          {/* Brand */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="font-[family-name:var(--font-instrument-serif)] text-2xl">
+                9RUBY
+              </span>
+              <span className="font-[family-name:var(--font-jetbrains-mono)] text-xs mt-1 text-white/60">
+                IX
+              </span>
+            </div>
+            <p className="text-sm text-white/40 leading-relaxed max-w-xs">
+              AI-powered marketing agency. Autonomous agents that plan, create,
+              and scale your brand — 24/7. Nine is final.
+            </p>
+            {/* Social */}
+            <div className="flex items-center gap-4 mt-6">
+              {["Twitter", "GitHub", "LinkedIn"].map((social) => (
+                <a
+                  key={social}
+                  href="#"
+                  className="text-xs text-white/30 hover:text-white/60 transition-colors font-[family-name:var(--font-jetbrains-mono)]"
+                >
+                  {social}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Link columns */}
+          {Object.entries(FOOTER_LINKS).map(([category, links]) => (
+            <div key={category}>
+              <h4 className="text-sm font-medium mb-4 text-white/60">
+                {category}
+              </h4>
+              <ul className="space-y-3">
+                {links.map((link) => (
+                  <li key={link}>
+                    <a
+                      href="#"
+                      className="text-sm text-white/30 hover:text-white/60 transition-colors"
+                    >
+                      {link}
+                      {link === "Careers" && (
+                        <span className="ml-2 text-xs text-[#C41A3B]">
+                          Hiring
+                        </span>
+                      )}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom bar */}
+        <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-white/10 gap-4">
+          <span className="text-xs text-white/30">
+            &copy; 2026 9Ruby. All rights reserved.
+          </span>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="text-xs text-white/40">
+              All agents operational
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
