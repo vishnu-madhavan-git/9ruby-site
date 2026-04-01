@@ -8,7 +8,7 @@ export function CTASection() {
       {/* Bioluminescent landscape background */}
       <div className="absolute inset-0 pointer-events-none">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2810%29-UnDKstODkIENp5xqTYUEpt0Sm8tNOw.png"
+          src="/images/ocean/ocean-garden.jpg"
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover opacity-40"

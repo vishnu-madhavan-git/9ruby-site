@@ -21,14 +21,14 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <ProcessSection />
-      <OrganicDivider variant="connection" />
+      <OrganicDivider variant="ocean-hero" />
       <InfraSection />
       <IntegrationsSection />
       <SecuritySection />
-      <OrganicDivider variant="bioluminescent" flip />
+      <OrganicDivider variant="ocean-garden" flip />
       <SDKSection />
       <TestimonialsSection />
-      <OrganicDivider variant="landscape" />
+      <OrganicDivider variant="ocean-hero" flip />
       <PricingSection />
       <CTASection />
       <Footer />
