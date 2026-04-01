@@ -63,17 +63,16 @@ export function PricingSection() {
       className="relative py-24 lg:py-32 overflow-hidden"
       style={{ background: "oklch(0.09 0.01 260)" }}
     >
-      {/* Ocean hero background element */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none opacity-35">
+      {/* CTA creature/whale background */}
+      <div className="absolute bottom-0 right-0 w-[500px] h-[400px] pointer-events-none opacity-50">
         <img
-          src="/images/ocean/ocean-hero.jpg"
+          src="/images/original/cta-creature.png"
           alt=""
           aria-hidden="true"
-          className="w-full h-full object-cover"
-          style={{ transform: "scaleX(-1)" }}
+          className="w-full h-full object-contain object-bottom-right"
         />
         <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[oklch(0.09_0.01_260)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[oklch(0.09_0.01_260)]/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent to-[oklch(0.09_0.01_260)]" />
       </div>
 
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">

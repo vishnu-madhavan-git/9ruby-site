@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ProcessSection } from "@/components/ProcessSection";
 import { InfraSection } from "@/components/InfraSection";
+import { MetricsSection } from "@/components/MetricsSection";
 import { IntegrationsSection } from "@/components/IntegrationsSection";
 import { SecuritySection } from "@/components/SecuritySection";
 import { SDKSection } from "@/components/SDKSection";
@@ -12,7 +13,6 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PricingSection } from "@/components/PricingSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
-import { OrganicDivider } from "@/components/OrganicDivider";
 
 export default function Home() {
   return (
@@ -21,15 +21,12 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <ProcessSection />
-      <OrganicDivider variant="ocean-hero" />
       <InfraSection />
+      <MetricsSection />
       <IntegrationsSection />
-      <OrganicDivider variant="ocean-network" flip />
       <SecuritySection />
-      <OrganicDivider variant="ocean-garden" />
       <SDKSection />
       <TestimonialsSection />
-      <OrganicDivider variant="ocean-tree" flip />
       <PricingSection />
       <CTASection />
       <Footer />

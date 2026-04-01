@@ -8,7 +8,7 @@ export function CTASection() {
       {/* Bioluminescent landscape background */}
       <div className="absolute inset-0 pointer-events-none">
         <img
-          src="/images/ocean/ocean-garden.jpg"
+          src="/images/original/cta-creature.png"
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover opacity-55"

@@ -28,8 +28,18 @@ const FOOTER_LINKS = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 py-16 lg:py-20">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <footer className="relative border-t border-white/10 py-16 lg:py-20 overflow-hidden">
+      {/* Coral ocean background */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-30">
+        <img
+          src="/images/ocean/ocean-garden.jpg"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover object-top"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black" />
+      </div>
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-12 mb-16">
           {/* Brand */}
           <div>

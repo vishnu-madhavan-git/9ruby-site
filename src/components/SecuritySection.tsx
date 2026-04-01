@@ -35,17 +35,6 @@ export function SecuritySection() {
       className="relative py-24 lg:py-32 overflow-hidden"
       style={{ background: "oklch(0.09 0.01 260)" }}
     >
-      {/* Deep ocean garden background */}
-      <div className="absolute bottom-0 left-0 w-full h-[600px] pointer-events-none opacity-40">
-        <img
-          src="/images/ocean/ocean-garden.jpg"
-          alt=""
-          aria-hidden="true"
-          className="w-full h-full object-cover object-bottom"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.09_0.01_260)] via-transparent to-[oklch(0.09_0.01_260)]/80" />
-      </div>
-
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-16">
           <div>
@@ -72,7 +61,24 @@ export function SecuritySection() {
           </div>
         </div>
 
-        {/* Security features grid */}
+        {/* Shield + features layout */}
+        <div className="grid lg:grid-cols-[1fr_auto] gap-8 mb-8">
+          {/* Incident counter + shield */}
+          <ScrollReveal>
+            <div className="flex items-center gap-8">
+              <div>
+                <span className="text-7xl lg:text-8xl font-[family-name:var(--font-instrument-serif)]">0</span>
+                <span className="block text-sm text-white/25 font-[family-name:var(--font-jetbrains-mono)] mt-2">Security incidents this year</span>
+              </div>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <div className="w-[200px] h-[200px] lg:w-[280px] lg:h-[280px]">
+              <img src="/images/original/security-shield.png" alt="" className="w-full h-full object-contain" />
+            </div>
+          </ScrollReveal>
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {FEATURES.map((feature, i) => (
             <ScrollReveal key={feature.title} delay={i * 100}>
@@ -92,9 +98,6 @@ export function SecuritySection() {
         {/* Compliance badges */}
         <ScrollReveal delay={200}>
           <div className="mt-12 flex flex-wrap items-center gap-4">
-            <span className="text-sm text-white/25 font-[family-name:var(--font-jetbrains-mono)]">
-              Compliance:
-            </span>
             {COMPLIANCE.map((badge) => (
               <span
                 key={badge}
@@ -103,27 +106,6 @@ export function SecuritySection() {
                 {badge}
               </span>
             ))}
-            <div className="ml-auto flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-sm text-white/25">
-                0 Security incidents this year
-              </span>
-            </div>
-          </div>
-        </ScrollReveal>
-
-        {/* Real-time metrics graph */}
-        <ScrollReveal delay={300}>
-          <div className="mt-12 relative border border-white/10 bg-black overflow-hidden">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/real-time-graph-INFmn3u0MlUwvNPynoIhwxtPaPjxM5.png"
-              alt="Real-time agent metrics"
-              className="w-full h-auto opacity-80"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-            <div className="absolute bottom-6 left-8">
-              <span className="font-[family-name:var(--font-jetbrains-mono)] text-xs text-white/25">Real-time agent security monitoring</span>
-            </div>
           </div>
         </ScrollReveal>
       </div>
